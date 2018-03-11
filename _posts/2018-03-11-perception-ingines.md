@@ -69,10 +69,19 @@ Three main modules:
 
 Combining the current versions of these systems is akin to building
 a computation ouija board: several neural networks simultaneously
-nudge and push a drawing toward a stated objective. At the end we
-can test for generalization by asking neural networks that were not
+nudge and push a drawing toward a stated objective.
+
+![First 100 steps creating the Electric Fan](https://user-images.githubusercontent.com/945979/37253632-3ed3773c-2599-11e8-853a-b800bdd51208.gif)
+<p align="center">First 100 steps creating the Electric Fan.</p>
+
+
+At the end we
+can test for generalization by querying neural networks that were not
 involved if they agree the objective has been met - an analogue
 of a train/test split where each entry is itself a trained network.
+
+![Network responses to Electric Fan print](https://user-images.githubusercontent.com/945979/37253079-931239d0-2591-11e8-9533-a1904c900fce.png)
+<p align="center">Electric fan was "trained" with input from inceptionv3, resnet50, vgg16 and vgg19 - and after printing scores well when evaluated on all four of those networks (circled in red). However, this result also generlizes well to other networks as seen by the strong top-1 scores on four other networks tested (and a lower top-3 score on nasnetmobile).</p>
 
 This also inverts the traditional creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make creative outputs. Thus, one of my core creative inputs is the design of a programming design system that allows the neural network to express itself with expressivity and a distinct style.
 
@@ -84,7 +93,8 @@ Early examples of (non-physical) Drawing Systems
 Modeling physical artifacts
 ------
 ![Left: Loading Purple Ink drum into Riso printer / Right: "Electric Fan" print before adding second black layer](https://user-images.githubusercontent.com/945979/37252784-67e24ac0-258c-11e8-8cab-565717e2284b.png)
-<p align="center">Left: Loading Purple Ink drum into Riso printer / Right: "Electric Fan" print before adding second black layer.</p>
+<p align="center">Left: Loading Purple Ink drum into Riso printer<br>
+Right: "Electric Fan" print before adding second black layer.</p>
 
 Riso printer
 
