@@ -22,6 +22,7 @@ of ongoing and future work.
 
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
 
+
 **POST STATUS: Outline / Early Draft**
 
 Themes
@@ -88,6 +89,9 @@ Riso printer
 
 Treachery of Imagenet
 =====================
+![Treachery of ImageNet: complete series](https://user-images.githubusercontent.com/945979/37252592-3c064fa4-2588-11e8-947a-0f7c89fe50fa.jpg)
+All 12 prints in the Treachery of ImageNet series
+
 
 Ongoing work
 ============
