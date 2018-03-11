@@ -20,6 +20,8 @@ create "Treachery of Imagenet" - a series of 12 ink prints based
 on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
+![useful image]({{ site.url }}/images/500x300.png)
+
 Themes
 ======
 
