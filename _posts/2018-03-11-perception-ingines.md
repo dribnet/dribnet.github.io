@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Draft Post: Perception Engines"
+title:  "Perception Engines"
 header:
   teaser: "/images/500x300.png"
 categories: 
@@ -21,6 +21,8 @@ on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
+
+**POST STATUS: Outline / Early Draft**
 
 Themes
 ======
