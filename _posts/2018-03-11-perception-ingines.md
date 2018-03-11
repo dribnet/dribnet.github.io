@@ -20,7 +20,7 @@ create "Treachery of Imagenet" - a series of 12 ink prints based
 on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
-![useful image]({{ site.url }}/images/500x300.png)
+![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
 
 Themes
 ======
@@ -74,6 +74,7 @@ This also inverts the traditional creative relationship employed in human comput
 
 Early examples of (non-physical) Drawing Systems
 ------
+![Early images: birdhouse, traffic light, school bus](https://user-images.githubusercontent.com/945979/37252509-cfcf4ed6-2586-11e8-9730-519f37f5b855.png)
 
 Modeling physical artifacts
 ------
