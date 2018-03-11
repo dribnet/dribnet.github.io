@@ -83,7 +83,7 @@ author:
   bio              : "Artist, Researcher, and Lecturer. Neural Networks and Creative Coding."
   location         : "Wellington, New Zealand"
   employer         :
-  googlescholar    : ""
+  googlescholar    :
   email            :
   uri              :
   bitbucket        :
@@ -98,7 +98,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : ""
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
