@@ -8,7 +8,7 @@ categories:
 tags:
   - neural networks
   - perception
-date: 2018-03-11
+date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
 
