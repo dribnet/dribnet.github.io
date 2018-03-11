@@ -11,9 +11,6 @@ tags:
 date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
-**Post Status: Outline / Early Draft**
-(suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-ingines.md) as a merge request!)
-
 This post gives an overview of the motivation and goals of explorations
 covering the past 9 months. Using a technique called "perception engines",
 I've been investigating the ability of deep neural networks to create
@@ -21,6 +18,10 @@ abstract imagery that is both recognizable. This system was used to
 create "Treachery of Imagenet" - a series of 12 ink prints based
 on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
+
+**Post Status: Outline / Early Draft**
+
+(suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-ingines.md) as a merge request!)
 
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
 <p align="center">Three prints from the recent Treachery of ImagNet series</p>
@@ -82,6 +83,9 @@ Early examples of (non-physical) Drawing Systems
 
 Modeling physical artifacts
 ------
+![Left: Loading Purple Ink drum into Riso printer / Right: "Electric Fan" print before adding second black layer](https://user-images.githubusercontent.com/945979/37252784-67e24ac0-258c-11e8-8cab-565717e2284b.png)
+<p align="center">Left: Loading Purple Ink drum into Riso printer / Right: "Electric Fan" print before adding second black layer.</p>
+
 Riso printer
 
  * colors and lighting
