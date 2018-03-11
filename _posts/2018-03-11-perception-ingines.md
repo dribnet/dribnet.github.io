@@ -12,6 +12,7 @@ date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
 **Post Status: Outline / Early Draft**
+(suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-ingines.md) as a merge request!)
 
 This post gives an overview of the motivation and goals of explorations
 covering the past 9 months. Using a technique called "perception engines",
