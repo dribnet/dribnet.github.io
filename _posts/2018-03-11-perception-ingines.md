@@ -11,6 +11,7 @@ tags:
 date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
+**Post Status: Outline / Early Draft**
 
 This post gives an overview of the motivation and goals of explorations
 covering the past 9 months. Using a technique called "perception engines",
@@ -21,9 +22,7 @@ on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
-
-
-**POST STATUS: Outline / Early Draft**
+<p align="center">Three prints from the recent Treachery of ImagNet series</p>
 
 Themes
 ======
@@ -78,6 +77,7 @@ This also inverts the traditional creative relationship employed in human comput
 Early examples of (non-physical) Drawing Systems
 ------
 ![Early images: birdhouse, traffic light, school bus](https://user-images.githubusercontent.com/945979/37252509-cfcf4ed6-2586-11e8-9730-519f37f5b855.png)
+<p align="center">Early drawing systems used lines and rectangles with unrestrained colors.</p>
 
 Modeling physical artifacts
 ------
@@ -90,7 +90,7 @@ Riso printer
 Treachery of Imagenet
 =====================
 ![Treachery of ImageNet: complete series](https://user-images.githubusercontent.com/945979/37252592-3c064fa4-2588-11e8-947a-0f7c89fe50fa.jpg)
-All 12 prints in the Treachery of ImageNet series
+<p align="center">All 12 prints in the Treachery of ImageNet series</p>
 
 
 Ongoing work
