@@ -11,22 +11,40 @@ tags:
 date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
-My main project for the foreseeable future.
-
-This post gives a visual overview of the motivation and goals of explorations
-covering the past 9 months. Using a technique called "perception engines",
-I've been investigating the ability of deep neural networks to create
-abstract imagery that is both recognizable. This system was used to
+A visual overview of the motivation and goals in developing a
+a technique I call "perception engines". Perception engines
+explore the ability of deep neural networks to create
+recognizable abstract objects from collections of real world objects.
+This system was used to
 create "Treachery of Imagenet" - a series of 12 ink prints based
 on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
-**Post Status: Outline / Early Draft**
-
-(suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-ingines.md) as a merge request!)
+**Post Status: Outline / Developing Draft**
 
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
 <p align="center">Three prints from the recent Treachery of ImagNet series</p>
+
+(suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-ingines.md) as a merge request!)
+
+Introduction
+======
+The core question I set out to explore: can modern neural networks
+be used to create abstract forms from nothing other than collections
+of examples segregated into an ontolgoy of human concepts? To preview
+the result - a raw collection of concrete objects such as an image library
+of hundreds of images electric fans:
+
+![ImageNet: First 49 examples of Electric Fan](https://user-images.githubusercontent.com/945979/37562896-1154e040-2ad8-11e8-924a-50962da6d6e2.png)
+<p align="center">4% of the "Electric Fan" category, randomly selected</p>
+
+was transformed into an abstract visual representation for the collection
+ - this ink two color ink print:
+
+![Abstract represenation of fan: two color ink print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
+<p align="center">Abstract two color ink print representing the category of electric fans</p>
+
+
 
 Themes
 ======
@@ -73,7 +91,7 @@ Combining the current versions of these systems is akin to building
 a computation ouija board: several neural networks simultaneously
 nudge and push a drawing toward a stated objective.
 
-![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37253632-3ed3773c-2599-11e8-853a-b800bdd51208.gif)
+![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37562776-4b316fa2-2ad5-11e8-857f-b1c29ba88318.gif)
 <p align="center">First 78 steps in creating the Electric Fan drawing.</p>
 
 At the end we

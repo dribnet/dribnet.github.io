@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-[Tom White](http://twitter.com/dribnet). Artist investigating Neural Network perception and concepts. Researcher creating interfaces that utilise modern Machine Learning techniques. Lecturer teaching Creative Coding, including the growing use of Creative AI.
+[Tom White](http://twitter.com/dribnet). Artist, researcher, and lecturer. Currently: investigating the perception and concepts embedded in neural networks, building interfaces that utilise modern Machine Learning techniques, and teaching Creative Coding fundamentals, including the growing use of Creative AI.
