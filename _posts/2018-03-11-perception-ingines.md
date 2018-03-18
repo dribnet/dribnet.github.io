@@ -11,7 +11,9 @@ tags:
 date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
-This post gives an overview of the motivation and goals of explorations
+My main project for the foreseeable future.
+
+This post gives a visual overview of the motivation and goals of explorations
 covering the past 9 months. Using a technique called "perception engines",
 I've been investigating the ability of deep neural networks to create
 abstract imagery that is both recognizable. This system was used to
@@ -71,9 +73,8 @@ Combining the current versions of these systems is akin to building
 a computation ouija board: several neural networks simultaneously
 nudge and push a drawing toward a stated objective.
 
-![First 100 steps creating the Electric Fan](https://user-images.githubusercontent.com/945979/37253632-3ed3773c-2599-11e8-853a-b800bdd51208.gif)
-<p align="center">First 100 steps creating the Electric Fan.</p>
-
+![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37253632-3ed3773c-2599-11e8-853a-b800bdd51208.gif)
+<p align="center">First 78 steps in creating the Electric Fan drawing.</p>
 
 At the end we
 can test for generalization by querying neural networks that were not
