@@ -31,7 +31,7 @@ Introduction: Perception is all you need
 ======
 The core question I set out to explore: can neural networks
 create abstract objects from nothing other than collections
-of examples segregated into an ontolgoy of human concepts? 
+of examples segregated into an ontology of human concepts? 
 Neural networks excel at perception and categorization, could
 it possibly be that with the right feedback loops perception
 is all you need to drive a constructive creative process?
@@ -53,7 +53,7 @@ fan category:
 Ultimately this will be transformed into an abstract visual representation
 of "electric fan" - this ink two color ink print:
 
-![Abstract represenation of fan: two color ink print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
+![Abstract representation of fan: two color ink print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
 <p align="center">Abstract two color ink print representing the category of electric fans</p>
 
 But there were many steps in building up to the system to achieve this.
@@ -64,28 +64,28 @@ Early (non-physical) Drawing Systems
 <p align="center">Early drawing systems used lines and rectangles with unrestrained colors.</p>
 
 The first versions of the system were not concerned with physical embodiment.
-They were pixel based systems which were inspired by and repurposed the techniques
+They were pixel based systems which were inspired by and re-purposed the techniques
 of Adversarial Examples. Adversarial examples are a body of research which probes
-neural networks with small perterbuations to the input image in order to cause
+neural networks with small perturbations to the input image in order to cause
 the neural network to misclassify its output.
 
-Adversarial Images are ususally constrained to making small changes to existing images. However, in my work I generally allow arbitrary changes within the constraints of a drawing system. Adversarial techniques also usually target specific neural networks. In my case I wanted images that generalize across all neural networks and - hopefully - humans as well. So I would generally use ensembles of trained networks with different well known architectures.
+Adversarial Images are usually constrained to making small changes to existing images. However, in my work I generally allow arbitrary changes within the constraints of a drawing system. Adversarial techniques also usually target specific neural networks. In my case I wanted images that generalize across all neural networks and - hopefully - humans as well. So I would generally use ensembles of trained networks with different well known architectures.
 
 Architecture
 ------
 The architecture of these early systems could be cleanly divided into
 three different submodules:
 
-  * Drawing system - The system of contraints involved in creating the physical artifact including anticipating a distribution variations. The early systems used lines or rectangles on a virtual canvas, but ultimately I hoped to use marks on a page under various production tolerances and lighting conditions. 
+  * Drawing system - The system of constraints involved in creating the image. The early systems used lines or rectangles on a virtual canvas, but ultimately I hoped to use marks on a page under various production tolerances and lighting conditions. 
 
   * Creative objective - What is the expressive goal? So far I have
   focusing on using neural networks pre-trained on ImageNet with an
-  objective of maximizing response to a single ImageNet classe. This
+  objective of maximizing response to a single ImageNet class. This
   is also consistent with most Adversarial Example literature.
 
   * Planning system - How is the objective maximized? I use a blackbox
   search technique that does simple hill climbing. Though inefficient,
-  it is otherwise a very simple technique and works well in practice
+  it is otherwise a simple technique and works well in practice
   over hundreds to thousands of iterations.
 
 Modeling physical artifacts
@@ -95,8 +95,8 @@ Modeling physical artifacts
 Right: "Electric Fan" print before adding second black layer.</p>
 
 After the proof of concept I was ready to target a physical drawing system. I chose a Riso Printer because
-it is a physical ink process very much like silkscreening. This meant I would be subject to a limited number of
-ink colors I could get (in practice, about 6) as well as unpredictable layer alignment between layers of
+it is a physical ink process similar to screen printing. This meant I would be subject to a number of production constraints such as limited number of
+ink colors I could get (in practice, about 6) and unpredictable layer alignment between layers of
 different colors.
 
 At this point I was also provided a grant from Google's Artist and Machine Intelligence group (AMI).
@@ -107,7 +107,7 @@ of possible outcomes.
 Issue #1: Layer Alignment
 -----------
 It is common for Riso prints to have a small amount of mis-alignment between layers because the paper must
-be run through for each different color. This possibility was handled by apply a small amout of jitter
+be run through for each different color. This possibility was handled by applying a small amount of jitter
 manually between colors.
 
 ![Electric fan with jitter](https://user-images.githubusercontent.com/945979/37575710-7b18fe0c-2b8d-11e8-8db2-a1490a831dfd.gif)
@@ -115,9 +115,9 @@ manually between colors.
 
 Issue #2: Lighting
 -----------
-The colors of a digital image can be given exactly. But a physical item will be perceived with slightly different
+The colors of a digital image can be given exactly. But a physical object will be perceived with slightly different
 colors depeding on the ambient lighting conditions. To allow the final print to be effective in a variety of
-environments, the paper and ink colors were photographed under multiple conditions and then simulated with
+environments, the paper and ink colors were photographed under multiple conditions and then simulated as
 various possibilities. 
 
 ![Electric fan with different lighting conditions](https://user-images.githubusercontent.com/945979/37575709-7aefb862-2b8d-11e8-88e9-9e78e24b6b96.gif)
@@ -141,8 +141,8 @@ Growing a fan
 -----------
 These transformation can be combined with the random search of the
 planning module to incrementally draw or refine a proposed design
-for a fan.  Combining these systems is akin to building
-a computation ouija board: several neural networks simultaneously
+for a fan.  Combining these systems felt like building
+a computational ouija board: several neural networks simultaneously
 nudge and push a drawing toward the objective.
 
 ![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37649310-3a66f544-2c96-11e8-83db-b4ddc844bd32.gif)
@@ -152,7 +152,7 @@ nudge and push a drawing toward the objective.
 Final Candidate
 -----------
 Once the system has produced a candidate, a set of master prints are made. Importantly, the perspective
-transforom is disabled to produce the master print in its cononical form. For the fan print, two layers
+transform is disabled to produce these master prints in its canonical form. For the fan print, two layers
 were produced: one for the purple ink and one for black.
 
 ![Separated layers](https://user-images.githubusercontent.com/945979/37576303-afdd6544-2b90-11e8-9748-5ef7e8d71747.png)
@@ -163,16 +163,16 @@ These are then used to print a series of ink versions on paper.
 ![Example print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
 <p align="center">One of the ink prints from the master above (no two are exactly alike).</p>
 
-At the end we
-can test for generalization by querying neural networks that were not
-involved if they agree the objective has been met - an analogue
-of a train/test split where each entry is itself a trained network.
+After printing, we
+can use a photo to test for generalization. We do this by querying neural networks that were not
+involved in the original pipeline to see if they agree the objective has been met - an analogue
+of a train/test split where each entry is itself a trained network. In this case, the electric fan image was produced with the influence of 4 trained networks, but generalizes well to 5 others.
 
 ![Network responses to Electric Fan print](https://user-images.githubusercontent.com/945979/37253079-931239d0-2591-11e8-9533-a1904c900fce.png)
-<p align="center">This lectric fan design was "trained" with input from inceptionv3, resnet50, vgg16 and vgg19 - and after printing scores well when evaluated on all four of those networks (circled in red). However, this result also generlizes well to other networks as seen by the strong top-1 scores on four other networks tested (and a lower top-3 score on nasnetmobile).</p>
+<p align="center">This electric fan design was "trained" with input from inceptionv3, resnet50, vgg16 and vgg19 - and after printing scores well when evaluated on all four of those networks (circled in red). However, this result also generalizes well to other networks as seen by the strong top-1 scores on four other networks tested (and a lower top-3 score on nasnetmobile).</p>
 
 
-Passing Thought: Constraint System as Creativity
+Constraint System as Creativity
 =====================
 Note that this also inverts the traditional creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make creative outputs. As the artist, one of my main creative inputs is the design of a programming design system that allows the neural network to express itself with expressivity and a distinct style.
 
@@ -184,11 +184,11 @@ Treachery of Imagenet
 
 For my initial use of this technique, I thought it best to explicitly caption the
 image with the intended target concept. Riffing off of Magritte's 
-(The Treachery of Images)[https://en.wikipedia.org/wiki/The_Treachery_of_Images] (and
+[The Treachery of Images](https://en.wikipedia.org/wiki/The_Treachery_of_Images) (and
 not being able to pass on a pun), I called these first prints *The
 Treachery of ImageNet*. The conceit was that many of these prints would 
-strongly evoke their target concepts in neural networks just as Magritte's pipe
-was evocotive of a pipe.
+strongly evoke their target concepts in neural networks in the same way people
+might find Magritte's painting evocative of an actual, non-representational pipe.
 
 Ongoing work
 ============
