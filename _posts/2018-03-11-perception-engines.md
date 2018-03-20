@@ -38,15 +38,15 @@ Neural networks excel at perception and categorization, could
 it possibly be that with the right feedback loops perception
 is all you need to drive a constructive creative process?
 The construction processes I am interested in are drawing
-systems that resulted in real world objects.
+systems that result in real world objects.
 
 Ultimately I was able to build a system that is able to express
 abstract concepts within the constraints of a given drawing system.
 In this post I'll examine one result and deconstruct the process
 behind it. The story starts with hundreds of example images
-of a particular concept - which in this case is "electric fan".
-The images come from ImageNet and are not filtered or curated.
-Here are the first few dozen training images from the electric
+of a particular concept - in this case images from the category "electric fan".
+All images come from ImageNet, are the only source of ground truth, and are not
+filtered or curated. Here are the first few dozen training images from the electric
 fan category:
 
 ![ImageNet: First 49 examples of Electric Fan](https://user-images.githubusercontent.com/945979/37649300-3442c382-2c96-11e8-8736-eec7b73f05cb.gif)
@@ -59,7 +59,7 @@ of "electric fan" - this two color ink print:
 ![Abstract representation of fan: two color ink print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
 <p align="center">Abstract two color ink print representing the category of electric fans</p>
 
-This essay is a guide through the steps in building up to the system to achieve this.
+This essay is a guide through the steps in building up the system able to achieve this.
 
 First Systems
 ======
