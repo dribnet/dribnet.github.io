@@ -11,12 +11,12 @@ tags:
 date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
-A visual overview of the motivation and goals in developing a
-a technique I call "perception engines". Perception engines
-explore the ability of deep neural networks to create
+A visual overview of
+a technique I call "perception engines" which
+explore the ability of neural networks to create
 recognizable abstract objects from collections of real world objects.
 This system was used to
-create "Treachery of Imagenet" - a series of 12 ink prints based
+create "Treachery of Imagenet", a series of 12 ink prints based
 on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
@@ -35,7 +35,7 @@ of examples segregated into an ontolgoy of human concepts? To preview
 the result - a raw collection of concrete objects such as an image library
 of hundreds of images electric fans:
 
-![ImageNet: First 49 examples of Electric Fan](https://user-images.githubusercontent.com/945979/37562896-1154e040-2ad8-11e8-924a-50962da6d6e2.png)
+![ImageNet: First 49 examples of Electric Fan](https://user-images.githubusercontent.com/945979/37649300-3442c382-2c96-11e8-8736-eec7b73f05cb.gif)
 <p align="center">4% of the "Electric Fan" category, randomly selected</p>
 
 was transformed into an abstract visual representation for the collection
@@ -91,8 +91,8 @@ Combining the current versions of these systems is akin to building
 a computation ouija board: several neural networks simultaneously
 nudge and push a drawing toward a stated objective.
 
-![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37562776-4b316fa2-2ad5-11e8-857f-b1c29ba88318.gif)
-<p align="center">First 78 steps in creating the Electric Fan drawing.</p>
+![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37649310-3a66f544-2c96-11e8-83db-b4ddc844bd32.gif)
+<p align="center">Early steps in creating the Electric Fan drawing.</p>
 
 At the end we
 can test for generalization by querying neural networks that were not
