@@ -25,7 +25,7 @@ of ongoing and future work.
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
 <p align="center">Three prints from the recent Treachery of ImagNet series</p>
 
-(suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-ingines.md) as a merge request!)
+(suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-engines.md) as a merge request!)
 
 Introduction
 ======
