@@ -37,11 +37,11 @@ of examples segregated into an ontology of human concepts?
 Neural networks excel at perception and categorization, could
 it possibly be that with the right feedback loops perception
 is all you need to drive a constructive creative process?
-The construction processes I was interested in were drawing
+The construction processes I am interested in are drawing
 systems that resulted in real world objects.
 
-Ultimately I was able to build a system that can express
-abstract concepts within the constraints of its drawing system.
+Ultimately I was able to build a system that is able to express
+abstract concepts within the constraints of a given drawing system.
 In this post I'll examine one result and deconstruct the process
 behind it. The story starts with hundreds of example images
 of a particular concept - which in this case is "electric fan".
@@ -54,7 +54,7 @@ fan category:
 
 Ultimately this will be transformed (with no human intervention) 
 into an abstract visual representation
-of "electric fan" - this ink two color ink print:
+of "electric fan" - this two color ink print:
 
 ![Abstract representation of fan: two color ink print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
 <p align="center">Abstract two color ink print representing the category of electric fans</p>
@@ -102,9 +102,9 @@ employs a physical ink process similar to screen printing. This meant I would be
 ink colors I could get (about 6) and unpredictable layer alignment between layers of
 different colors.
 
-At this point I was also provided a grant from Google's Artist and Machine Intelligence group (AMI).
+At this point I was also awarded a grant from Google's Artist and Machine Intelligence group (AMI).
 With their generous support, I was able to print a series of test prints and iteratively improve
-my software system to model the physical printing process. Each of these possibilities that might result in a physical object appearing different is modeled as a distribution
+my software system to model the physical printing process. Each source of uncertainty that could cause a physical object to have variations in appearance is modeled as a distribution
 of possible outcomes.
 
 Issue #1: Layer Alignment
@@ -129,7 +129,7 @@ various possibilities.
 The lighting and layer adjustments were independent and could be applied concurrently.
 
 ![Electric fan: jitter and lighting](https://user-images.githubusercontent.com/945979/37575708-7ac59c62-2b8d-11e8-9b9c-a65024631b26.gif)
-<p align="center">Examples of jitter and lighting variations being applied to produce a larger distribution of possible alignment outcomes.</p>
+<p align="center">Examples of jitter and lighting variations being applied to produce a larger distribution of possible outcomes.</p>
 
 Issue #3: Perspective
 -----------
@@ -177,7 +177,7 @@ of a train / test split across trained networks with a different architectures. 
 
 Constraint System as Creativity
 =====================
-Note that this overall process also inverts the stereotypical creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make its own creative outputs. As the human artist, one of my own main creative inputs is the design of a programming design system that allows the neural network to express itself effectively and with a distinct style. I've designed the constraint system that defines the form, but the neural networks are the ultimate arbiter of the content.
+Note that using perception engines inverts the stereotypical creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make its own creative outputs. As the human artist, one of my own main creative inputs is the design of a programming design system that allows the neural network to express itself effectively and with a distinct style. I've designed the constraint system that defines the form, but the neural networks are the ultimate arbiter of the content.
 
 
 Treachery of ImageNet
@@ -196,4 +196,4 @@ may find Magritte's painting evocative of an actual, non-representational pipe.
 Ongoing work
 ============
 
-I currently have other related series are in various stages of production using the same core architecture. These use the same objective and planner but vary the drawing system, such as using multiple ink layers or using more generic screen printing techniques. Further out, other series are being prototyped which using different objectives or more radical departures from the current types of drawing systems and embodiments. As these are completed I'll share results on twitter with occasional writeups here.
+Other series are currently in various stages of production using the same core architecture. These use the same objective and planner but vary the drawing system, such as using multiple ink layers or using more generic screen printing techniques. Further out, other series are being prototyped which using different objectives or more radical departures from the current types of drawing systems and embodiments. As these are completed I'll share incremental results on twitter with occasional writeups here, and I also maintain an [online store](http://dribnet.bigcartel.com/) that sells completed prints and funds future work.
