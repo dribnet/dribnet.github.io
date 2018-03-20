@@ -29,7 +29,7 @@ of ongoing and future work.
 
 (suggestions? please [suggest an edit](https://github.com/dribnet/dribnet.github.io/edit/master/_posts/2018-03-11-perception-engines.md) as a merge request!)
 
-Introduction: Perception is all you need
+Introduction
 ======
 The core question I set out to explore: can neural networks
 create abstract objects from nothing other than collections
@@ -60,7 +60,7 @@ of "electric fan" - this ink two color ink print:
 
 But there were many steps in building up to the system to achieve this.
 
-Early (non-physical) Drawing Systems
+First Systems
 ======
 ![Early images: birdhouse, traffic light, school bus](https://user-images.githubusercontent.com/945979/37252509-cfcf4ed6-2586-11e8-9730-519f37f5b855.png)
 <p align="center">Early drawing systems used lines and rectangles with loosely constrained colors.</p>
@@ -74,8 +74,8 @@ the neural network to misclassify its output.
 Adversarial Images are usually constrained to making small changes to existing images. However, in my work I generally allow arbitrary changes within the constraints of a drawing system. Adversarial techniques also usually target specific neural networks. In my case I wanted images that generalize across all neural networks and - hopefully - humans as well. So I would generally use ensembles of trained networks with different well known architectures.
 
 Architecture
-------
-The architecture of these early systems could be cleanly divided into
+======
+As the architecture of these early systems settled, the operation could be cleanly divided into
 three different submodules:
 
   * Drawing system - The system of constraints involved in creating the image. The early systems used lines or rectangles on a virtual canvas, but ultimately I hoped to use marks on a page under various production tolerances and lighting conditions. 
@@ -91,7 +91,7 @@ three different submodules:
   over hundreds to thousands of iterations.
 
 Modeling physical artifacts
-------
+======
 ![Left: Loading Purple Ink drum into Riso printer / Right: "Electric Fan" print before adding second black layer](https://user-images.githubusercontent.com/945979/37252784-67e24ac0-258c-11e8-8cab-565717e2284b.png)
 <p align="center">Left: Loading Purple Ink drum into Riso printer<br>
 Right: "Electric Fan" print before adding second black layer.</p>
@@ -140,7 +140,7 @@ added during a final refinement stage and are done in addition to the alignment 
 <p align="center">Examples of perspective transform being added to produce a distribution of possible viewing angles.</p>
 
 Growing a fan
------------
+======
 These transformation can be combined with the random search of the
 planning module to incrementally draw or refine a proposed design
 for a fan.  Combining these systems felt like building
@@ -179,7 +179,7 @@ Constraint System as Creativity
 Note that this overall process also inverts the stereotypical creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make its own creative outputs. As the human artist, one of my own main creative inputs is the design of a programming design system that allows the neural network to express itself with expressivity and a distinct style.
 
 
-Treachery of Imagenet
+Treachery of ImageNet
 =====================
 ![Treachery of ImageNet: complete series](https://user-images.githubusercontent.com/945979/37252592-3c064fa4-2588-11e8-947a-0f7c89fe50fa.jpg)
 <p align="center">All 12 prints in the Treachery of ImageNet series</p>
