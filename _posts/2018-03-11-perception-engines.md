@@ -161,7 +161,7 @@ were produced: one for the purple ink and one for black.
 ![Separated layers](https://user-images.githubusercontent.com/945979/37576303-afdd6544-2b90-11e8-9748-5ef7e8d71747.png)
 <p align="center">Final aligned layers of Electric Fan as they are sent to be printed.</p>
 
-These are then used to print a series of ink versions on paper.
+These masters are used to print ink versions on paper.
 
 ![Example print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
 <p align="center">One of the ink prints from the master above (no two are exactly alike).</p>
@@ -185,7 +185,8 @@ Treachery of ImageNet
 ![Treachery of ImageNet: complete series](https://user-images.githubusercontent.com/945979/37252592-3c064fa4-2588-11e8-947a-0f7c89fe50fa.jpg)
 <p align="center">All 12 prints in the Treachery of ImageNet series</p>
 
-For my initial use of this technique, I decided to explicitly caption each
+In my initial set of perception engine objects
+I decided to explicitly caption each
 image with the intended target concept. Riffing off of Magritte's 
 [The Treachery of Images](https://en.wikipedia.org/wiki/The_Treachery_of_Images) (and
 not being able to pass on a pun), I called these first prints *The
@@ -196,4 +197,4 @@ may find Magritte's painting evocative of an actual, non-representational pipe.
 Ongoing work
 ============
 
-Other series are currently in various stages of production using the same core architecture. These use the same objective and planner but vary the drawing system, such as using multiple ink layers or using more generic screen printing techniques. Further out, other series are being prototyped which using different objectives or more radical departures from the current types of drawing systems and embodiments. As these are completed I'll share incremental results on twitter with occasional writeups here, and I also maintain an [online store](http://dribnet.bigcartel.com/) that sells completed prints and funds future work.
+Other series are currently in various stages of production using the same core architecture. These use the same objective and planner but vary the drawing system, such as using multiple ink layers or using more generic screen printing techniques. Further out, other series are being prototyped which using different objectives or more radical departures from the current types of drawing systems and embodiments. As these are completed I'll share incremental results [on twitter](https://twitter.com/dribnet) with occasional writeups here, and I also maintain an [online store](http://dribnet.bigcartel.com/) that sells completed prints and funds future work.
