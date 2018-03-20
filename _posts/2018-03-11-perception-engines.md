@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Perception Engines"
+title:  "Perception is all you need"
 header:
   teaser: "/images/500x300.png"
 categories: 
@@ -11,16 +11,18 @@ tags:
 date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
-A visual overview of
-a technique I call "perception engines" which
-explores the ability of neural networks to create
+A visual overview 
+an exploration of the ability of neural networks to create
 abstract representation from collections of real world objects.
+The technique is called (tentatively) *Perception Engines* as 
+it is able to construct physical objects but is powered primarily by
+computational perception.
 This system was used to
 create "Treachery of Imagenet", a series of 12 ink prints based
 on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
-**Post Status: Early Draft**
+**Post Status: Draft, still being edited**
 
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
 <p align="center">Three prints from the recent Treachery of ImagNet series</p>
@@ -61,7 +63,7 @@ But there were many steps in building up to the system to achieve this.
 Early (non-physical) Drawing Systems
 ======
 ![Early images: birdhouse, traffic light, school bus](https://user-images.githubusercontent.com/945979/37252509-cfcf4ed6-2586-11e8-9730-519f37f5b855.png)
-<p align="center">Early drawing systems used lines and rectangles with unrestrained colors.</p>
+<p align="center">Early drawing systems used lines and rectangles with loosely constrained colors.</p>
 
 The first versions of the system were not concerned with physical embodiment.
 They were pixel based systems which were inspired by and re-purposed the techniques
@@ -94,8 +96,8 @@ Modeling physical artifacts
 <p align="center">Left: Loading Purple Ink drum into Riso printer<br>
 Right: "Electric Fan" print before adding second black layer.</p>
 
-After the proof of concept I was ready to target a physical drawing system. I chose a Riso Printer because
-it is a physical ink process similar to screen printing. This meant I would be subject to a number of production constraints such as limited number of
+After the proof of concept I was ready to target a physical drawing system. As my first target, I chose a Riso Printer which
+employs a physical ink process similar to screen printing. This meant I would be subject to a number of production constraints such as limited number of
 ink colors I could get (in practice, about 6) and unpredictable layer alignment between layers of
 different colors.
 
@@ -151,8 +153,8 @@ nudge and push a drawing toward the objective.
 
 Final Candidate
 -----------
-Once the system has produced a candidate, a set of master prints are made. Importantly, the perspective
-transform is disabled to produce these master prints in its canonical form. For the fan print, two layers
+Once the system has produced a candidate, a set of master pages are made. Importantly, the perspective and jitter
+transforms are disabled to produce these masters in their canonical form. For the fan print, two layers
 were produced: one for the purple ink and one for black.
 
 ![Separated layers](https://user-images.githubusercontent.com/945979/37576303-afdd6544-2b90-11e8-9748-5ef7e8d71747.png)
@@ -174,7 +176,7 @@ of a train/test split where each entry is itself a trained network. In this case
 
 Constraint System as Creativity
 =====================
-Note that this also inverts the traditional creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make creative outputs. As the artist, one of my main creative inputs is the design of a programming design system that allows the neural network to express itself with expressivity and a distinct style.
+Note that this overall process also inverts the stereotypical creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make its own creative outputs. As the human artist, one of my own main creative inputs is the design of a programming design system that allows the neural network to express itself with expressivity and a distinct style.
 
 
 Treachery of Imagenet
