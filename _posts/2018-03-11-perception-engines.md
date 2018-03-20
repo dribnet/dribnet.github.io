@@ -12,7 +12,7 @@ date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
 A visual overview 
-an my exploration probing of the ability of neural networks to create
+of my exploration probing of the ability of neural networks to create
 abstract representation from collections of real world objects.
 The technique developed is called (tentatively) *Perception Engines* as 
 it is able to construct physical objects but is powered primarily by
@@ -102,8 +102,8 @@ employs a physical ink process similar to screen printing. This meant I would be
 ink colors I could get (about 6) and unpredictable layer alignment between layers of
 different colors.
 
-At this point I was also awarded a grant from Google's Artist and Machine Intelligence group (AMI).
-With their generous support, I was able to print a series of test prints and iteratively improve
+At this point I was also awarded a grant from Google's [Artist and Machine Intelligence group](https://ami.withgoogle.com/) (AMI).
+With their support, I was able to print a series of test prints and iteratively improve
 my software system to model the physical printing process. Each source of uncertainty that could cause a physical object to have variations in appearance is modeled as a distribution
 of possible outcomes.
 
