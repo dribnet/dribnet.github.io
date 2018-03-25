@@ -44,19 +44,19 @@ Ultimately I was able to build a system that is able to express
 abstract concepts within the constraints of a given drawing system.
 Neural Networks excel at classfing images: given an image
 they can assign it to a catgory such as fan, baseball, or ski mask.
-In this project, I generated abstract representation prints
-that were intended to elicit the same responses in neural networks.
+In this project, I generated abstract representational prints
+that were intended to elicit these same responses in neural networks.
 This process developed is called *perception engines* as it uses the
-perception ability of various neural networks to guide its construction
-process. When successful, the technique is found to generalize broadly
-across neural network architectures. It is also interesting when
-these outputs do (or don't) appear meaningful to humans as well.  
+perception ability of trained neural networks to guide
+its construction process. When successful, the technique is found to generalize broadly
+across neural network architectures. It is also interesting to consider
+when these outputs do (or don't) appear meaningful to humans.  
 In this post I'll examine one result and deconstruct the process
 behind it.
 
-The process starts with hundreds of example images
+The perception abilities of a classifier are grounded in hundreds of example images
 of a particular concept - in this case images from the category "electric fan".
-The only source of ground truth for any drawing is an unfiltered
+So the only source of ground truth for any drawing is an unfiltered
 collection of images from ImageNet. Here are the first few dozen
 training images from the electric fan category:
 
@@ -68,7 +68,7 @@ into an abstract visual representation
 of "electric fan" - this two color ink print:
 
 ![Abstract representation of fan: two color ink print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
-<p align="center">Abstract two color ink print representing the category of electric fans</p>
+<p align="center">Abstract ink print representing the ImageNet category "electric fan"</p>
 
 This essay is a guide through the steps in building up the system able to achieve this.
 
