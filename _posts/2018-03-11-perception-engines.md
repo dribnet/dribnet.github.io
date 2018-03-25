@@ -61,14 +61,14 @@ collection of images from ImageNet. Here are the first few dozen
 training images from the electric fan category:
 
 ![ImageNet: First 49 examples of Electric Fan](https://user-images.githubusercontent.com/945979/37649300-3442c382-2c96-11e8-8736-eec7b73f05cb.gif)
-<p align="center">Random samples from the "Electric Fan" category</p>
+<p align="center">Random samples from the "electric fan" category</p>
 
 Ultimately this will be transformed (with no human intervention) 
 into an abstract visual representation
 of "electric fan" - this two color ink print:
 
 ![Abstract representation of fan: two color ink print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
-<p align="center">Abstract ink print representing the ImageNet category "electric fan"</p>
+<p align="center">Abstract ink print for the category "electric fan"</p>
 
 This essay is a guide through the steps in building up the system able to achieve this.
 
