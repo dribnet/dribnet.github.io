@@ -12,17 +12,17 @@ date: 2018-03-31
 permalink: /posts/2018/03/perception-engines/
 ---
 A visual overview 
-of my exploration probing of the ability of neural networks to create
+of an exploration probing of the ability of neural networks to create
 abstract representation from collections of real world objects.
-The technique developed is called (tentatively) *Perception Engines* as 
-it is able to construct physical objects but is powered primarily by
+The technique called *Perception Engines* in introduced that 
+is able to construct physical objects and powered primarily by
 computational perception.
 This system was used to
 create "Treachery of Imagenet", a series of 12 ink prints based
 on ImageNet categories, and permutations of this system are the basis
 of ongoing and future work.
 
-**Post Status: Draft, still being edited**
+**Post Status: First Complete Draft - Nearly Done?**
 
 ![Treachery of ImageNet: forklift, ruler, sewing machine](https://user-images.githubusercontent.com/945979/37252510-d35ac436-2586-11e8-85e8-f5247fa78a2a.jpg)
 <p align="center">Three prints from the recent Treachery of ImagNet series</p>
@@ -42,12 +42,22 @@ systems that result in real world objects.
 
 Ultimately I was able to build a system that is able to express
 abstract concepts within the constraints of a given drawing system.
+Neural Networks excel at classfing images: given an image
+they can assign it to a catgory such as fan, baseball, or ski mask.
+In this project, I generated abstract representation prints
+that were intended to elicit the same responses in neural networks.
+This process developed is called *perception engines* as it uses the
+perception ability of various neural networks to guide its construction
+process. When successful, the technique is found to generalize broadly
+across neural network architectures. It is also interesting when
+these outputs do (or don't) appear meaningful to humans as well. 
+
 In this post I'll examine one result and deconstruct the process
-behind it. The story starts with hundreds of example images
+behind it. The process starts with hundreds of example images
 of a particular concept - in this case images from the category "electric fan".
-All images come from ImageNet, are the only source of ground truth, and are not
-filtered or curated. Here are the first few dozen training images from the electric
-fan category:
+The only source of ground truth for any drawing is an unfiltered
+collection of images from ImageNet. Here are the first few dozen
+training images from the electric fan category:
 
 ![ImageNet: First 49 examples of Electric Fan](https://user-images.githubusercontent.com/945979/37649300-3442c382-2c96-11e8-8736-eec7b73f05cb.gif)
 <p align="center">Random samples from the "Electric Fan" category</p>
@@ -76,6 +86,9 @@ Adversarial Examples are usually constrained to making small changes to existing
 
 Architecture
 ======
+![Architecture diagram](https://user-images.githubusercontent.com/945979/37874286-0849e480-3089-11e8-91df-5616cf2cb914.png)
+<p align="center">Perception Engines Architecture</p>
+
 As the architecture of these early systems settled, the operation could be cleanly divided into
 three different submodules:
 
@@ -86,10 +99,28 @@ three different submodules:
   objective of maximizing response to a single ImageNet class. This
   is also consistent with most Adversarial Example literature.
 
-  * Planning system - How is the objective maximized? I use a blackbox
-  search technique that does simple hill climbing. Though inefficient,
+  * Planning system - How is the objective maximized? Currently I use the
+  random search process which is a type of blackbox optimization
+  (meaning no gradient information is used). Though not particularly efficient,
   it is otherwise a simple technique and works well in practice
-  over hundreds to thousands of iterations.
+  over hundreds to thousands of iterations. It also finds a "local maximum",
+  which means in practice means it will converge on a different solution each run.
+
+Growing a fan
+======
+The perception engine architecture defines uses the random search of
+the plannig module to gradually achieve the objective through iterative refinement.
+When the objective is to maximize the preception of an electric fan, the system
+will incrementally draw or refine a proposed design
+for a fan.  Combining these systems feels like using
+a computational ouija board: several neural networks simultaneously
+nudge and push a drawing toward the objective.
+
+![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37649310-3a66f544-2c96-11e8-83db-b4ddc844bd32.gif)
+<p align="center">Early steps in creating the Electric Fan drawing.</p>
+
+Though this is effective when optimizing for digital outputs, additional
+steps need to be taken in expectations of creating and viewing physical objects.
 
 Modeling physical artifacts
 ======
@@ -140,20 +171,10 @@ added during a final refinement stage and are done in addition to the alignment 
 ![Electric fan with perspective transformations](https://user-images.githubusercontent.com/945979/37575707-7a9a26ae-2b8d-11e8-873c-4ace927313f0.gif)
 <p align="center">Examples of perspective transform being added to produce a distribution of possible viewing angles.</p>
 
-Growing a fan
-======
-These transformation can be combined with the random search of the
-planning module to incrementally draw or refine a proposed design
-for a fan.  Combining these systems feels like using
-a computational ouija board: several neural networks simultaneously
-nudge and push a drawing toward the objective.
 
-![First 78 steps in creating the Electric Fan drawing](https://user-images.githubusercontent.com/945979/37649310-3a66f544-2c96-11e8-83db-b4ddc844bd32.gif)
-<p align="center">Early steps in creating the Electric Fan drawing.</p>
-
-
-Final Candidate
------------
+Final Print
+========
+This system typically runs for many hours on a deep learning workstation in order to generate hundreds to thousands of iterations on a single design.
 Once the system has produced a candidate, a set of master pages are made. Importantly, the perspective and jitter
 transforms are disabled to produce these masters in their canonical form. For the fan print, two layers
 were produced: one for the purple ink and one for black.
@@ -166,6 +187,8 @@ These masters are used to print ink versions on paper.
 ![Example print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
 <p align="center">One of the ink prints from the master above (no two are exactly alike).</p>
 
+Evaluating
+----------
 After printing, we
 can use a photo to test for generalization. We do this by querying neural networks that were not
 involved in the original pipeline to see if they agree the objective has been met - an analogue
@@ -196,5 +219,4 @@ may find Magritte's painting evocative of an actual, non-representational pipe.
 
 Ongoing work
 ============
-
 Other series are currently in various stages of production using the same core architecture. These use the same objective and planner but vary the drawing system, such as using multiple ink layers or using more generic screen printing techniques. Further out, other series are being prototyped which using different objectives or more radical departures from the current types of drawing systems and embodiments. As these are completed I'll share incremental results [on twitter](https://twitter.com/dribnet) with occasional writeups here, and I also maintain an [online store](http://dribnet.bigcartel.com/) that sells completed prints and funds future work.
