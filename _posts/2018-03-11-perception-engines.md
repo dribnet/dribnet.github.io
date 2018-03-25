@@ -31,7 +31,7 @@ of ongoing and future work.
 
 Introduction
 ======
-The core question I set out to explore: can neural networks
+The core question I set out to explore was: can neural networks
 create abstract objects from nothing other than collections
 of examples segregated into an ontology of human concepts? 
 Neural networks excel at perception and categorization, could
@@ -44,14 +44,14 @@ Ultimately I was able to build a system that is able to express
 abstract concepts within the constraints of a given drawing system.
 Neural Networks excel at classfing images: given an image
 they can assign it to a catgory such as fan, baseball, or ski mask.
-In this project, I generated abstract representational prints
-that were intended to elicit these same responses in neural networks.
+In this project, the system generates abstract representational prints
+that are intended to elicit these same responses in neural networks.
 This process developed is called *perception engines* as it uses the
 perception ability of trained neural networks to guide
 its construction process. When successful, the technique is found to generalize broadly
 across neural network architectures. It is also interesting to consider
 when these outputs do (or don't) appear meaningful to humans.  
-In this post I'll examine one result and deconstruct the process
+This post examines one result and deconstructs the process
 behind it.
 
 The perception abilities of a classifier are grounded in hundreds of example images
@@ -83,7 +83,8 @@ of Adversarial Examples. Adversarial Examples are a body of research which probe
 neural networks with small perturbations to the input image in order to cause
 the neural network to misclassify its output.
 
-Adversarial Examples are usually constrained to making small changes to existing images. However, in my work I generally allow arbitrary changes within the constraints of a drawing system. Adversarial techniques also usually target specific neural networks. In my case I wanted images that generalize across all neural networks and - hopefully - humans as well. So I use ensembles of trained networks with different well known architectures and also test for generalization.
+Adversarial Examples are usually constrained to making small changes to existing images. However, 
+this work generally allows arbitrary changes within the constraints of a drawing system. Adversarial techniques also usually target specific neural networks. The goal here was to create images that generalize across all neural networks and - hopefully - humans as well. So perception engines use ensembles of trained networks with different well known architectures and also test for generalization.
 
 Architecture
 ======
@@ -93,15 +94,15 @@ Architecture
 As the architecture of these early systems settled, the operation could be cleanly divided into
 three different submodules:
 
-  * Drawing system - The system of constraints involved in creating the image. The early systems used lines or rectangles on a virtual canvas, but ultimately I hoped to use marks on a page under various production tolerances and lighting conditions. 
+  * Drawing system - The system of constraints involved in creating the image. The early systems used lines or rectangles on a virtual canvas, but later sytems achived the same result for marks on a page under various production tolerances and lighting conditions. 
 
-  * Creative objective - What is the expressive goal? Thus far I have
-  focused on using neural networks pre-trained on ImageNet with an
+  * Creative objective - What is the expressive goal? Thus far the
+  focus has been on using neural networks pre-trained on ImageNet with an
   objective of maximizing response to a single ImageNet class. This
   is also consistent with most Adversarial Example literature.
 
-  * Planning system - How is the objective maximized? Currently I use the
-  random search process which is a type of blackbox optimization
+  * Planning system - How is the objective maximized? Currently random search
+  is used, which is a type of blackbox optimization
   (meaning no gradient information is used). Though not particularly efficient,
   it is otherwise a simple technique and works well in practice
   over hundreds to thousands of iterations. It also finds a "local maximum",
@@ -130,12 +131,12 @@ Modeling physical artifacts
 <p align="center">Left: Loading Purple Ink drum into Riso printer<br>
 Right: "Electric Fan" print before adding second black layer.</p>
 
-After the proof of concept I was ready to target a physical drawing system. As my first target, I chose a Riso Printer which
-employs a physical ink process similar to screen printing. This meant I would be subject to a number of production constraints such as limited number of
-ink colors I could get (about 6) and unpredictable layer alignment between layers of
+After the proof of concept I was ready to target a physical drawing system. The Riso Printer was chosen as a first target; it
+employs a physical ink process similar to screen printing. This meant all outputs are subject to a number of production constraints such as limited number of
+ink colors (I used about 6) and unpredictable layer alignment between layers of
 different colors.
 
-At this point I was also awarded a grant from Google's [Artist and Machine Intelligence group](https://ami.withgoogle.com/) (AMI).
+At this point in my development I was awarded a grant from Google's [Artist and Machine Intelligence group](https://ami.withgoogle.com/) (AMI).
 With their support, I was able to print a series of test prints and iteratively improve
 my software system to model the physical printing process. Each source of uncertainty that could cause a physical object to have variations in appearance is modeled as a distribution
 of possible outcomes.
@@ -217,7 +218,7 @@ In my initial set of perception engine objects
 I decided to explicitly caption each
 image with the intended target concept. Riffing off of Magritte's 
 [The Treachery of Images](https://en.wikipedia.org/wiki/The_Treachery_of_Images) (and
-not being able to pass on a pun), I called these first prints *The
+not being able to pass on a pun), these first prints were called *The
 Treachery of ImageNet*. The conceit was that many of these prints would 
 strongly evoke their target concepts in neural networks in the same way people
 may find Magritte's painting evocative of an actual, non-representational pipe.
