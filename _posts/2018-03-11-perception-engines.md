@@ -50,10 +50,11 @@ This process developed is called *perception engines* as it uses the
 perception ability of various neural networks to guide its construction
 process. When successful, the technique is found to generalize broadly
 across neural network architectures. It is also interesting when
-these outputs do (or don't) appear meaningful to humans as well. 
-
+these outputs do (or don't) appear meaningful to humans as well.  
 In this post I'll examine one result and deconstruct the process
-behind it. The process starts with hundreds of example images
+behind it.
+
+The process starts with hundreds of example images
 of a particular concept - in this case images from the category "electric fan".
 The only source of ground truth for any drawing is an unfiltered
 collection of images from ImageNet. Here are the first few dozen
@@ -120,7 +121,8 @@ nudge and push a drawing toward the objective.
 <p align="center">Early steps in creating the Electric Fan drawing.</p>
 
 Though this is effective when optimizing for digital outputs, additional
-steps need to be taken in expectations of creating and viewing physical objects.
+work is necessary when planning physical objects which are subject to
+production tolerances and a range of viewing conditions.
 
 Modeling physical artifacts
 ======
@@ -146,6 +148,9 @@ manually between colors.
 
 ![Electric fan with jitter](https://user-images.githubusercontent.com/945979/37575710-7b18fe0c-2b8d-11e8-8db2-a1490a831dfd.gif)
 <p align="center">Examples of jitter being applied to produce a distribution of possible alignment outcomes.</p>
+
+In practice this jitter keeps the final design from being overly dependent on the relative
+placement of elements across different layers.
 
 Issue #2: Lighting
 -----------
@@ -185,7 +190,7 @@ were produced: one for the purple ink and one for black.
 These masters are used to print ink versions on paper.
 
 ![Example print](https://user-images.githubusercontent.com/945979/37562897-12e5bd9e-2ad8-11e8-8c59-38cc8e3f4387.png)
-<p align="center">One of the ink prints from the master above (no two are exactly alike).</p>
+<p align="center">Ink print from the master above (no two are exactly alike).</p>
 
 Evaluating
 ----------
@@ -200,7 +205,7 @@ of a train / test split across trained networks with a different architectures. 
 
 Constraint System as Creativity
 =====================
-Note that using perception engines inverts the stereotypical creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make its own creative outputs. As the human artist, one of my own main creative inputs is the design of a programming design system that allows the neural network to express itself effectively and with a distinct style. I've designed the constraint system that defines the form, but the neural networks are the ultimate arbiter of the content.
+A philisophical note on creativity and intent: Using perception engines inverts the stereotypical creative relationship employed in human computer interaction. Instead of using the computer as a tool, the Drawing System module can be thought of a special tool that the neural network itself drives to make its own creative outputs. As the human artist, one of my own main creative inputs is the design of a programming design system that allows the neural network to express itself effectively and with a distinct style. I've designed the constraint system that defines the form, but the neural networks are the ultimate arbiter of the content.
 
 
 Treachery of ImageNet
