@@ -14,7 +14,7 @@ permalink: /posts/2018/03/perception-engines/
 A visual overview 
 of an exploration probing of the ability of neural networks to create
 abstract representation from collections of real world objects.
-The technique called *Perception Engines* in introduced that 
+A technique called _*perception engines*_ in introduced that 
 is able to construct physical objects and powered primarily by
 computational perception.
 This system was used to
